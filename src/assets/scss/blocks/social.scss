@@ -1,0 +1,9 @@
+.social {
+	display: flex;
+	justify-content: center;
+}
+.social__item + .social__item{
+	margin-left: 1.5rem;
+}
+.social__link {
+}
