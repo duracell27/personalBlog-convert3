@@ -13,7 +13,7 @@
 	<meta name="format-detection" content="telephone=no">
 	<meta name="description" content="">
 	
-	<title>Search</title>
+	<title>Sign in</title>
 </head>
 
 <body>
@@ -84,32 +84,29 @@
 		<main class="main">
 			<div class="container">
 				
-				<h1 class="page__title">Результати пошуку "розробка сайту"</h1>
+				<h1 class="page__title page__title--center">Вхід</h1>
 				
-				<div class="post">
+				<form action="" class="form form--auth">
 				
-					<div class="post__content">
-						<h2 class="post__title">
-							<a href="#">Lorem ipsum dolor sit amet.</a>
-						</h2>
-						<p class="post__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi eius mollitia
-							nostrum
-							distinctio accusantium, autem nesciunt laborum rem tempore molestiae amet facere expedita veritatis totam
-							doloribus quidem rerum sit. Officiis, nobis omnis adipisci eveniet repellat quam mollitia. Vitae, reiciendis
-							sit?</p>
+					<div class="form__group">
+						<input type="text" class="form__control" placeholder="Ваше email">
+						<span class="form__line"></span>
 					</div>
-					<div class="post__footer">
-						<ul class="post__data">
-							<li class="post__data-item">
-								<time datetime="2020-07-27 19:20">27.07.2020</time>
-							</li>
-							<li class="post__data-item">
-								<a href="#">Розробка сайту</a>
-							</li>
+					<div class="form__group">
+						<input type="password" class="form__control" placeholder="Ваш пароль">
+						<span class="form__line"></span>
+					</div>
+				
+					<div class="form__footer form__footer--center">
+						<div class="form__group">
+							<button class="btn btn--blue btn--rounded btn--sm">Вхід</button>
+						</div>
+						<ul class="form__footer--list">
+							<li><a href="reset.html">відновити</a></li>
+							<li><a href="signUp.html">реєстрація</a></li>
 						</ul>
-						<a href="#" class="post__read">перейти</a>
 					</div>
-				</div>
+				</form>
 
 			</div>
 		</main>

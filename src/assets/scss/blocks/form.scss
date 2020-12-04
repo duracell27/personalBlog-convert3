@@ -1,8 +1,16 @@
 .form {
+  &--auth {
+    max-width: 28rem;
+    margin: 0 auto;
+  }
 }
+
 .form__group {
   margin-bottom: 1.5rem;
   position: relative;
+  &--md {
+    margin-bottom: 2.5rem;
+  }
 }
 .form__control {
   display: block;
@@ -15,7 +23,7 @@
   font-family: inherit;
   font-size: 1.4rem;
   color: $white;
-  padding: 0.5rem 0;
+  padding: 0.5rem 0 0.75rem;
   &:focus + .form__line {
     width: 100%;
   }
@@ -36,6 +44,31 @@
   position: absolute;
   bottom: 0;
   left: 0;
-  transition: width 0.2s linear;
+  transition: width 0.3s linear;
   z-index: 1;
+}
+
+.form__footer {
+  &--center {
+    text-align: center;
+  }
+}
+
+.form__footer--list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  li {
+    margin: 0 0.5rem;
+  }
+  a {
+    color: $white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    line-height: 1.2;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }
